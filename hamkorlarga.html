@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    
+    
+</head>
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 5px 2px lightgray;
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+    margin: 0 50px;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+nav .header-right select {
+    padding: 4px;
+    border: none;
+    color: aqua;
+    font-weight: 600;
+    margin-right: 5px;
+}
+.login-form {
+    background-color: azure;
+    width: 900px;
+    height: 400px;
+    margin: auto;
+    margin-top: 60px;
+    
+}
+.login-top {
+    height: 80px;
+    background: rgb(28,50,208);
+    background: radial-gradient(circle, rgba(28,50,208,1) 26%, rgba(35,45,181,1) 61%);
+}
+.login-middle {
+    height: 260px;
+    border: solid 4px rgb(184, 180, 180) ;
+    border-top: none;
+    border-bottom: none;
+}
+.login-bottom {
+    height: 60px;
+    border: solid 4px rgb(184, 180, 180) ;
+}
+.text1{
+    color: white;
+    font-size: 250%;
+    position: relative;
+    left: 30px ;
+    top: 20px;
+}
+.text2{
+    color: white;
+    font-size: 18px;
+    position: relative;
+    left: 615px;
+    bottom: 10px;
+}
+.text2 span {
+    position: relative;
+    bottom: 20px;
+}
+.lex1{
+    position: relative;
+    left: 30px;
+    font-size: 20px;
+}
+.lex1 input{
+    width: 330px;
+    height: 40px;
+    border: solid 1px rgb(148, 140, 140);
+    font-size: 20px;
+    border-radius: 6px;
+}
+.lex1 button{
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    border: solid 1px rgb(125, 117, 117);
+    background-color: rgb(71, 189, 71);
+    font-size: 20px;
+}
+.dex1{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.dex2{
+    position: relative;
+    left: 46px;
+    bottom: 16px;
+    color: rgb(94, 91, 91);
+}
+.dex2 span{
+    position: relative;
+    left: 220px;
+    bottom: 18px;
+    color: rgb(31, 30, 30);
+}
+.oxiri{
+    background-color: aqua;
+    height: 240px;
+    position: relative;
+    top: 100px;
+}
+</style>
+<body>
+    <div class="asosiycontiner">
+        <!-- boshi statrt -->
+    <nav>
+        <img
+          src="https://static.emaktab.uz/img/logotypes/uzlogotype.png"
+          alt=""
+        />
+        <ul>
+          <li><a href="index.html">Tashkilot</a></li>
+          <span>|</span>
+          <li><a href="imkonyitalar.html">Imkonyatlar</a></li>
+          <span>|</span>
+          <li><a href="hamkorlarga.html">Hamkorlarga</a></li>
+          <span>|</span>
+          <li><a href="loginpage.html">Yordam</a></li>
+        </ul>
+        <div class="header-right">
+          <select name="" id="">
+            <option value="">Uz</option>
+            <option value="">Ru</option>
+          </select>
+          <button>Kirish</button>
+          <button>Tashkilot ulash</button>
+        </div>
+      </nav>
+      <!-- boshi end -->
+      <!-- pasti start -->
+      <div class="login-form">
+        <div class="login-top">
+            <div class="text1">
+                Kirish eMaktab
+            </div>
+            <div class="text2">
+                <p>Tizimda ro'yxatdan o'tmaganmisiz?</p>
+                <span>____________________________</span>
+            </div>
+        </div>
+        <div class="login-middle">
+            <div class="lex1">
+                <br>
+            <br>
+            <label for="" style="color: rgb(0, 0, 0);">Login</label>
+            <br>
+            <input type="text">
+            <br>
+            <label for="" style="color: rgb(0, 0, 0);">Parol</label>
+            <br>
+            <input type="password">
+            <br>
+            <br>
+            <button style="color: white;"><center>Tiziga kiring</center></button>
+            </div>
+        </div>
+        <div class="login-bottom">
+            <div class="dex1">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAONJREFUSEtjZBggwDhA9jIMHoutjY3l/jIyKlEzJJj//7939OzZR8hmovjY2NhYkpWJ6SkDA9VD4v/vf/+kz549+xxmOYrFFiYmDgyMjPup6Vu4Wf//O544c+YAQYsZ//8v/M/AcIESRzAyMBj8Z2TsB5tBrMXoCslxAEoIUsNiBwMDgR8sLAYgx3D8+XPhwIULH7A5jOoW4zMQ2QHDx+IBC2piExrVg3rAfDzyEteoj5EL/+FZgAxYHA9YPqZpyTVwDQFivUWsOnwNgQFr7IEcPyDNW2JDjRrqBk9Pghq+IcYMANb/iS7M+bYLAAAAAElFTkSuQmCC"/>
+            </div>
+            <div class="dex2">
+                <p>Login yoki parolni undutdigizmi? Loginni tiklash</p>
+                <span>____________</span>
+            </div>
+        </div>
+      </div>
+      <!-- pasti end -->
+      <!-- oxirgi rasm -->
+        <div class="oxiri">
+            <img src="/photo_2024-04-21_00-20-14.jpg" alt="" height="240px" width="2885px">
+        </div>
+
+
+
+
+    </div>
+</body>
+</html>
